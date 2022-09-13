@@ -65,6 +65,10 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 	public void setPrice(Double price) {
 		this.price = price;
 	}
+	
+	public Double getSubTotal() {
+		return price * quantity;
+	}
 
 	@Override
 	public int hashCode() {
